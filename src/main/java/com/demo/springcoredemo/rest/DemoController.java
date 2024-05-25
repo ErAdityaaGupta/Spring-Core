@@ -12,15 +12,15 @@ public class DemoController {
     private Coach myCoach;
 
     // define the constructor for dependency injection.
-//    @Autowired
-//    public DemoController(Coach theCoach){
-//        myCoach = theCoach;
-//    }
-
     @Autowired
-    public void setCoach(Coach theCoach){ // we can give any name which we want for this method, and it would work the same.
+    public DemoController(Coach theCoach){
         myCoach = theCoach;
     }
+
+//    @Autowired
+//    public void setCoach(Coach theCoach){ // we can give any name which we want for this method, and it would work the same.
+//        myCoach = theCoach;
+//    }
 
 
     @GetMapping("/dailyWorkout")
