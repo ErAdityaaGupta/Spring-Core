@@ -14,7 +14,7 @@ public class DemoController {
 
     // define the constructor for dependency injection.
     @Autowired
-    public DemoController(@Qualifier("baseballCoach") Coach theCoach){
+    public DemoController(@Qualifier("trackCoach") Coach theCoach){
         myCoach = theCoach;
     }
 
