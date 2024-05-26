@@ -14,13 +14,13 @@ public class DemoController {
 
     // define the constructor for dependency injection.
     @Autowired
-//    public DemoController(@Qualifier("trackCoach") Coach theCoach){
-//        myCoach = theCoach;
-//    }
-
-    public DemoController(Coach theCoach){
+    public DemoController(@Qualifier("trackCoach") Coach theCoach){
         myCoach = theCoach;
     }
+
+//    public DemoController(Coach theCoach){
+//        myCoach = theCoach;
+//    }
 
 //    @Autowired
 //    public void setCoach(Coach theCoach){ // we can give any name which we want for this method, and it would work the same.
