@@ -18,16 +18,16 @@ public class TrackCoach implements Coach{
     }
 
     // define our init method
-    @PostConstruct
-    public void doMyStartupWork(){
-        System.out.println("In doMyStartupWork method." + getClass().getSimpleName());
-    }
-
-    // define our destroy method
-    @PreDestroy
-    public void doMyCleanupStuff(){
-        System.out.println("In doMyCleanupStuff method" + getClass().getSimpleName());
-    }
+//    @PostConstruct
+//    public void doMyStartupWork(){
+//        System.out.println("In doMyStartupWork method." + getClass().getSimpleName());
+//    }
+//
+//    // define our destroy method
+//    @PreDestroy
+//    public void doMyCleanupStuff(){
+//        System.out.println("In doMyCleanupStuff method" + getClass().getSimpleName());
+//    }
 
     @Override
     public String getDailyWorkout() {
