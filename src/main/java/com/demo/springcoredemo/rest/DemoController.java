@@ -12,15 +12,16 @@ public class DemoController {
     // define a private field for thr dependency
     private Coach myCoach;
 
-    private Coach anotherCoach;
+//    private Coach anotherCoach;
 
     // define the constructor for dependency injection.
     @Autowired
-    public DemoController(@Qualifier("trackCoach") Coach theCoach,
-                          @Qualifier("trackCoach") Coach theAnotherCoach){
+    public DemoController(@Qualifier("trackCoach") Coach theCoach
+//                          @Qualifier("trackCoach") Coach theAnotherCoach
+                         ){
         System.out.println("In constructor: "+ getClass().getSimpleName());
         myCoach = theCoach;
-        anotherCoach = theAnotherCoach;
+//        anotherCoach = theAnotherCoach;
     }
 
 //    public DemoController(Coach theCoach){
@@ -39,10 +40,10 @@ public class DemoController {
     }
 
 
-    @GetMapping("/check")
-    public String check(){
-        return "Comparing beans: myCoach = anotherCoach, " + (myCoach == anotherCoach);
-    }
+//    @GetMapping("/check")
+//    public String check(){
+//        return "Comparing beans: myCoach = anotherCoach, " + (myCoach == anotherCoach);
+//    }
 
 
 }
